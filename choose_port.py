@@ -9,7 +9,6 @@ def choose_port():
         :returns:
             The selected port
     """
-
     ports = s.list_serial_ports()
     if not ports:
         raise SerialException("No open serial ports could be found. Check the connections.")
